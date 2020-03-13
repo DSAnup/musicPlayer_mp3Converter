@@ -62,7 +62,7 @@ def directorychooser():
 
     pygame.mixer.init()
     pygame.mixer.music.load(listofsongs[0])
-    # pygame.mixer.music.play()
+    pygame.mixer.music.play()
 
 
 directorychooser()
@@ -88,15 +88,15 @@ nextbutton.pack()
 prebutton = Button(root, text="Previous Song")
 prebutton.pack()
 
-playbutton = Button(root, text="Play Song")
-playbutton.pack()
+# playbutton = Button(root, text="Play Song")
+# playbutton.pack()
 
 stopbutton = Button(root, text="Stop Song")
 stopbutton.pack()
 
 nextbutton.bind("<Button-1>", nextsong)
 prebutton.bind("<Button-1>", prevsong)
-playbutton.bind("<Button-1>", playsong)
+# playbutton.bind("<Button-1>", playsong)
 stopbutton.bind("<Button-1>", stopsong)
 
 songlabel.pack()
